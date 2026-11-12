@@ -1,0 +1,1991 @@
+<!doctype html>
+<html lang="es" data-type="product">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="page-type" content="product" />
+    <meta name="site-kind" content="tech" />
+    <meta name="theme-color" content="#09090b" />
+
+    <!-- Reemplazar [nombre de la tienda] con el nombre oficial de tu tienda -->
+    <title>GameSir MX — Controles Xbox y PC | [nombre de la tienda]</title>
+    <meta
+      name="description"
+      content="Catálogo de controles GameSir compatibles con Xbox y PC. Compra directa por WhatsApp y envíos a todo México."
+    />
+    <meta property="og:title" content="GameSir MX — Controles Xbox y PC" />
+    <meta
+      property="og:description"
+      content="Controles GameSir compatibles con Xbox y PC. Compra por WhatsApp con envíos a todo México."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #09090b;
+        --bg-alt: #111215;
+        --surface: #15171c;
+        --surface-2: #1c1f26;
+        --border: rgba(255, 255, 255, 0.09);
+        --border-strong: rgba(255, 255, 255, 0.18);
+        --ink: #f4f4f5;
+        --ink-muted: #a1a1aa;
+        --ink-dim: #71717a;
+        --accent: #22c55e;
+        --accent-hover: #16a34a;
+        --accent-ink: #04210f;
+        --accent-soft: rgba(34, 197, 94, 0.12);
+        --radius: 12px;
+        --radius-sm: 8px;
+        --font-display: "Space Grotesk", system-ui, -apple-system, sans-serif;
+        --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+        --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+        --nav-h: 72px;
+        --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+        background-color: var(--bg);
+        color: var(--ink);
+        font-family: var(--font-sans);
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      body {
+        margin: 0;
+        background-color: var(--bg);
+        color: var(--ink);
+        font-size: 16px;
+        line-height: 1.55;
+        overflow-x: hidden;
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      button {
+        font-family: inherit;
+      }
+
+      /* Skip link */
+      .skip-link {
+        position: fixed;
+        top: -100px;
+        left: 20px;
+        z-index: 200;
+        background: var(--accent);
+        color: var(--accent-ink);
+        font-weight: 600;
+        font-size: 14px;
+        padding: 12px 18px;
+        border-radius: var(--radius-sm);
+        transition: top 0.15s ease;
+      }
+
+      .skip-link:focus {
+        top: 16px;
+        outline: 2px solid #ffffff;
+        outline-offset: 2px;
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--accent);
+        outline-offset: 3px;
+      }
+
+      /* Equal left/right edges container */
+      .wrap {
+        width: 100%;
+        max-width: 1280px;
+        margin-inline: auto;
+        padding-inline: clamp(20px, 4vw, 48px);
+      }
+
+      /* Header */
+      .site-header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        height: var(--nav-h);
+        background: rgba(9, 9, 11, 0.86);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--border);
+      }
+
+      .nav-inner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+      }
+
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        min-height: 44px;
+        font-family: var(--font-display);
+        font-weight: 700;
+        font-size: 17px;
+        letter-spacing: -0.02em;
+        white-space: nowrap;
+      }
+
+      .brand-mark {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        display: grid;
+        place-items: center;
+        border-radius: 8px;
+        background: var(--surface-2);
+        border: 1px solid var(--border-strong);
+        color: var(--accent);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 28px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-link {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--ink-muted);
+        transition: color 0.2s var(--ease);
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 8px;
+        height: 1.5px;
+        background: var(--accent);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition: transform 0.24s var(--ease);
+      }
+
+      .nav-link:hover,
+      .nav-link:focus-visible {
+        color: var(--ink);
+      }
+
+      .nav-link:hover::after,
+      .nav-link:focus-visible::after {
+        transform: scaleX(1);
+      }
+
+      .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .menu-btn {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--border-strong);
+        background: var(--surface);
+        color: var(--ink);
+        cursor: pointer;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        min-height: 46px;
+        padding: 12px 22px;
+        border-radius: var(--radius-sm);
+        font-family: var(--font-display);
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        cursor: pointer;
+        border: 1px solid transparent;
+        transition:
+          transform 0.18s var(--ease),
+          background-color 0.18s var(--ease),
+          border-color 0.18s var(--ease),
+          color 0.18s var(--ease);
+        white-space: nowrap;
+      }
+
+      .btn:hover {
+        transform: translateY(-1px);
+      }
+
+      .btn:active {
+        transform: translateY(0) scale(0.98);
+      }
+
+      .btn-primary {
+        background: var(--accent);
+        color: var(--accent-ink);
+      }
+
+      .btn-primary:hover {
+        background: var(--accent-hover);
+      }
+
+      .btn-secondary {
+        background: var(--surface);
+        color: var(--ink);
+        border-color: var(--border-strong);
+      }
+
+      .btn-secondary:hover {
+        background: var(--surface-2);
+        border-color: rgba(255, 255, 255, 0.3);
+      }
+
+      .btn-sm {
+        min-height: 44px;
+        padding: 10px 16px;
+        font-size: 14px;
+      }
+
+      /* Mobile Menu Overlay */
+      .mobile-menu {
+        display: none;
+        position: fixed;
+        inset: var(--nav-h) 0 0 0;
+        z-index: 95;
+        background: var(--bg);
+        padding: 32px clamp(20px, 4vw, 48px);
+        flex-direction: column;
+        justify-content: space-between;
+        border-top: 1px solid var(--border);
+      }
+
+      .mobile-menu.is-open {
+        display: flex;
+      }
+
+      .mobile-menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .mobile-menu-link {
+        display: flex;
+        align-items: center;
+        min-height: 52px;
+        font-family: var(--font-display);
+        font-size: 24px;
+        font-weight: 600;
+        color: var(--ink);
+        border-bottom: 1px solid var(--border);
+      }
+
+      /* Section Architecture: one section per screen on desktop */
+      main > section {
+        position: relative;
+        padding-block: clamp(64px, 8vh, 108px);
+        border-bottom: 1px solid var(--border);
+        scroll-margin-top: var(--nav-h);
+      }
+
+      main > section.band-alt {
+        background-color: var(--bg-alt);
+      }
+
+      @media (min-width: 1024px) {
+        main > section {
+          min-height: calc(100svh - var(--nav-h));
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+      }
+
+      /* Typography */
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        font-family: var(--font-mono);
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin: 0 0 16px 0;
+      }
+
+      .eyebrow-dot {
+        width: 7px;
+        height: 7px;
+        border-radius: 999px;
+        background: var(--accent);
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: var(--font-display);
+        margin: 0;
+        letter-spacing: -0.03em;
+        line-height: 1.06;
+        color: var(--ink);
+      }
+
+      h1 {
+        font-size: clamp(2.35rem, 4.6vw, 4.1rem);
+        font-weight: 700;
+      }
+
+      h2 {
+        font-size: clamp(1.9rem, 3.3vw, 3rem);
+        font-weight: 700;
+      }
+
+      h3 {
+        font-size: clamp(1.2rem, 1.5vw, 1.4rem);
+        font-weight: 600;
+        line-height: 1.2;
+      }
+
+      .lead {
+        margin: 0;
+        font-size: clamp(1.05rem, 1.3vw, 1.2rem);
+        color: var(--ink-muted);
+        max-width: 58ch;
+      }
+
+      .section-head {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 20px 40px;
+        margin-bottom: clamp(32px, 4.5vh, 52px);
+      }
+
+      .section-head .lead {
+        max-width: 48ch;
+      }
+
+      /* Hero Entrance (plays once on load) */
+      [data-enter] .enter-item {
+        opacity: 0;
+        transform: translateY(16px);
+        animation: heroEnter 0.65s var(--ease) forwards;
+      }
+
+      [data-enter] .enter-delay-1 {
+        animation-delay: 0.08s;
+      }
+      [data-enter] .enter-delay-2 {
+        animation-delay: 0.16s;
+      }
+      [data-enter] .enter-delay-3 {
+        animation-delay: 0.24s;
+      }
+
+      @keyframes heroEnter {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Section 1: Hero */
+      .hero {
+        background:
+          radial-gradient(
+            70% 65% at 78% 45%,
+            rgba(34, 197, 94, 0.11) 0%,
+            rgba(34, 197, 94, 0.02) 48%,
+            transparent 75%
+          ),
+          var(--bg);
+        padding-block: clamp(36px, 5vh, 72px);
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.02fr) minmax(0, 1.15fr);
+        align-items: center;
+        gap: clamp(28px, 4.5vw, 64px);
+      }
+
+      .hero-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+      }
+
+      .hero-facts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .fact-tag {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-family: var(--font-mono);
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: var(--ink);
+        background: var(--surface);
+        border: 1px solid var(--border-strong);
+      }
+
+      .fact-tag.is-accent {
+        color: var(--accent);
+        background: var(--accent-soft);
+        border-color: rgba(34, 197, 94, 0.35);
+      }
+
+      .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-top: 6px;
+      }
+
+      /* Hero visual: large, no grey box */
+      .hero-media {
+        position: relative;
+        width: 100%;
+      }
+
+      .hero-media .img-frame {
+        aspect-ratio: 4 / 3;
+        background: transparent;
+        border: none;
+        border-radius: var(--radius);
+        mask-image: radial-gradient(94% 92% at 50% 50%, #000 74%, transparent 100%);
+        -webkit-mask-image: radial-gradient(94% 92% at 50% 50%, #000 74%, transparent 100%);
+      }
+
+      /* Reusable Image Frame + Instant Swap Control */
+      .img-frame {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        background: var(--surface);
+      }
+
+      .img-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.45s var(--ease);
+      }
+
+      .img-frame:hover img,
+      .product-card:hover .img-frame img {
+        transform: scale(1.03);
+      }
+
+      .img-edit-btn {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        z-index: 5;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        min-height: 36px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        background: rgba(9, 9, 11, 0.86);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 255, 255, 0.24);
+        color: var(--ink);
+        font-family: var(--font-mono);
+        font-size: 11px;
+        font-weight: 500;
+        cursor: pointer;
+        opacity: 0;
+        transform: translateY(-4px);
+        transition:
+          opacity 0.2s var(--ease),
+          transform 0.2s var(--ease),
+          border-color 0.2s var(--ease),
+          background-color 0.2s var(--ease);
+      }
+
+      .img-frame:hover .img-edit-btn,
+      .img-frame:focus-within .img-edit-btn {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .img-edit-btn:hover {
+        border-color: var(--accent);
+        background: #09090b;
+      }
+
+      .img-edit-btn input[type="file"] {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+      }
+
+      @media (hover: none), (max-width: 768px) {
+        .img-edit-btn {
+          opacity: 0.92;
+          transform: translateY(0);
+        }
+      }
+
+      /* Section 2: Catalog (5 controllers) */
+      .catalog-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .product-card {
+        display: flex;
+        flex-direction: column;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        transition:
+          transform 0.24s var(--ease),
+          border-color 0.24s var(--ease);
+      }
+
+      .product-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--border-strong);
+      }
+
+      .product-card .img-frame {
+        aspect-ratio: 16 / 10;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .product-body {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        gap: 16px;
+        padding: 22px;
+      }
+
+      .product-top {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .product-price {
+        font-family: var(--font-mono);
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--accent);
+        background: var(--accent-soft);
+        border: 1px solid rgba(34, 197, 94, 0.28);
+        padding: 4px 9px;
+        border-radius: 6px;
+        white-space: nowrap;
+      }
+
+      .spec-meta {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        padding-block: 12px;
+        border-top: 1px solid var(--border);
+        border-bottom: 1px solid var(--border);
+        margin: 0;
+      }
+
+      .spec-meta dt {
+        font-family: var(--font-mono);
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--ink-dim);
+        margin-bottom: 2px;
+      }
+
+      .spec-meta dd {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--ink);
+      }
+
+      .feature-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: 14px;
+        color: var(--ink-muted);
+      }
+
+      .feature-list li {
+        position: relative;
+        padding-left: 16px;
+      }
+
+      .feature-list li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 9px;
+        width: 6px;
+        height: 6px;
+        border-radius: 2px;
+        background: var(--accent);
+      }
+
+      .product-footer {
+        margin-top: auto;
+        padding-top: 6px;
+      }
+
+      .product-footer .btn {
+        width: 100%;
+      }
+
+      /* Section 3: Spotlight Xiaohai Edition */
+      .spotlight-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+        align-items: center;
+        gap: clamp(28px, 4.5vw, 60px);
+      }
+
+      .spotlight-media .img-frame {
+        aspect-ratio: 4 / 3;
+        border-radius: var(--radius);
+        border: 1px solid var(--border-strong);
+      }
+
+      .spotlight-content {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+      }
+
+      .spotlight-price-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .spotlight-price {
+        font-family: var(--font-mono);
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--accent);
+      }
+
+      .spotlight-specs {
+        display: grid;
+        gap: 12px;
+      }
+
+      .spotlight-spec-row {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        gap: 14px;
+        padding: 14px 16px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-sm);
+      }
+
+      .spotlight-spec-label {
+        font-family: var(--font-mono);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--ink-dim);
+      }
+
+      .spotlight-spec-value {
+        font-size: 15px;
+        color: var(--ink);
+      }
+
+      /* Section 4: Comparison Table */
+      .table-shell {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+
+      .compare-table {
+        width: 100%;
+        min-width: 780px;
+        border-collapse: collapse;
+        text-align: left;
+      }
+
+      .compare-table th,
+      .compare-table td {
+        padding: 18px 20px;
+        border-bottom: 1px solid var(--border);
+        vertical-align: middle;
+        font-size: 14px;
+      }
+
+      .compare-table thead th {
+        font-family: var(--font-mono);
+        font-size: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        color: var(--ink-muted);
+        background: var(--surface-2);
+      }
+
+      .compare-table tbody tr {
+        transition: background-color 0.2s var(--ease);
+      }
+
+      .compare-table tbody tr:hover {
+        background: rgba(255, 255, 255, 0.025);
+      }
+
+      .compare-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+
+      .model-cell {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--ink);
+      }
+
+      .table-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        min-height: 44px;
+        font-family: var(--font-display);
+        font-size: 14px;
+        font-weight: 600;
+        color: var(--accent);
+        white-space: nowrap;
+      }
+
+      .table-link:hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+
+      /* Section 5: Why buy here (3 reasons) */
+      .reasons-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .reason-card {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 28px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        transition:
+          transform 0.24s var(--ease),
+          border-color 0.24s var(--ease);
+      }
+
+      .reason-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--border-strong);
+      }
+
+      .reason-icon {
+        width: 44px;
+        height: 44px;
+        display: grid;
+        place-items: center;
+        border-radius: 10px;
+        background: var(--accent-soft);
+        border: 1px solid rgba(34, 197, 94, 0.3);
+        color: var(--accent);
+      }
+
+      .reason-card p {
+        margin: 0;
+        font-size: 15px;
+        color: var(--ink-muted);
+      }
+
+      /* Section 6: How to buy (3 steps with subtle signal line) */
+      .steps-grid {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      .step-card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        padding: 28px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        transition:
+          transform 0.24s var(--ease),
+          border-color 0.24s var(--ease);
+      }
+
+      .step-card:hover {
+        transform: translateY(-2px);
+        border-color: var(--border-strong);
+      }
+
+      .step-num-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .step-num {
+        font-family: var(--font-mono);
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--accent);
+        background: var(--accent-soft);
+        border: 1px solid rgba(34, 197, 94, 0.3);
+        padding: 4px 10px;
+        border-radius: 6px;
+      }
+
+      .step-line {
+        flex: 1;
+        height: 1px;
+        background: linear-gradient(
+          90deg,
+          rgba(34, 197, 94, 0.55) 0%,
+          rgba(255, 255, 255, 0.08) 100%
+        );
+      }
+
+      .step-card p {
+        margin: 0;
+        font-size: 15px;
+        color: var(--ink-muted);
+      }
+
+      /* Section 7: Contact & Closing */
+      .close-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+        align-items: center;
+        gap: clamp(28px, 4.5vw, 60px);
+      }
+
+      .close-copy {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+      }
+
+      .contact-list {
+        display: grid;
+        gap: 12px;
+        margin: 0;
+        padding: 18px 20px;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+      }
+
+      .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+        gap: 8px 16px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .contact-row:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+
+      .contact-label {
+        font-family: var(--font-mono);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: var(--ink-dim);
+      }
+
+      .contact-value {
+        font-size: 15px;
+        font-weight: 500;
+        color: var(--ink);
+      }
+
+      .close-media .img-frame {
+        aspect-ratio: 4 / 3;
+        border-radius: var(--radius);
+        border: 1px solid var(--border-strong);
+      }
+
+      /* Footer */
+      .site-footer {
+        background: var(--bg);
+        padding-block: 36px;
+      }
+
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px 32px;
+      }
+
+      .footer-meta {
+        font-size: 13px;
+        color: var(--ink-dim);
+        margin: 0;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .footer-links a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        font-size: 13px;
+        color: var(--ink-muted);
+      }
+
+      .footer-links a:hover {
+        color: var(--ink);
+      }
+
+      /* Responsive Breakpoints */
+      @media (max-width: 1120px) {
+        .catalog-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 900px) {
+        .nav-links,
+        .nav-actions .btn {
+          display: none;
+        }
+
+        .menu-btn {
+          display: inline-flex;
+        }
+
+        .hero-grid,
+        .spotlight-grid,
+        .close-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .reasons-grid,
+        .steps-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .catalog-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .spotlight-spec-row {
+          grid-template-columns: 1fr;
+          gap: 4px;
+        }
+
+        .hero-actions .btn,
+        .close-copy .btn,
+        .spotlight-content .btn {
+          width: 100%;
+        }
+      }
+
+      /* Reduced Motion */
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+
+        [data-enter] .enter-item {
+          opacity: 1;
+          transform: none;
+          animation: none;
+        }
+
+        .btn,
+        .product-card,
+        .reason-card,
+        .step-card,
+        .img-frame img,
+        .img-edit-btn,
+        .nav-link::after {
+          transition: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+    <!-- Reemplazar [nombre de la tienda] con el nombre oficial de tu tienda -->
+    <header class="site-header">
+      <div class="wrap nav-inner">
+        <a class="brand" href="#inicio" aria-label="[nombre de la tienda] — Inicio">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="6" width="20" height="12" rx="4" />
+              <path d="M6 12h4M8 10v4" />
+              <circle cx="16" cy="11" r="1" fill="currentColor" />
+              <circle cx="18" cy="13" r="1" fill="currentColor" />
+            </svg>
+          </span>
+          <span>[nombre de la tienda]</span>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a class="nav-link" href="#catalogo">Catálogo</a></li>
+            <li><a class="nav-link" href="#destacado">Edición Xiaohai</a></li>
+            <li><a class="nav-link" href="#comparativa">Comparativa</a></li>
+            <li><a class="nav-link" href="#como-comprar">Cómo comprar</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <a
+            class="btn btn-primary btn-sm"
+            data-wa-link="Consulta general de controles GameSir"
+            href="https://wa.me/520000000000?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20controles%20GameSir."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Comprar por WhatsApp
+          </a>
+
+          <button
+            class="menu-btn"
+            type="button"
+            aria-label="Abrir menú de navegación"
+            aria-expanded="false"
+            aria-controls="menu-movil"
+            id="btn-menu-movil"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M4 7h16M4 12h16M4 17h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Menú móvil -->
+    <div class="mobile-menu" id="menu-movil" aria-hidden="true">
+      <ul class="mobile-menu-list">
+        <li><a class="mobile-menu-link" href="#catalogo">Catálogo</a></li>
+        <li><a class="mobile-menu-link" href="#destacado">Edición Xiaohai</a></li>
+        <li><a class="mobile-menu-link" href="#comparativa">Comparativa</a></li>
+        <li><a class="mobile-menu-link" href="#razones">Por qué comprar aquí</a></li>
+        <li><a class="mobile-menu-link" href="#como-comprar">Cómo comprar</a></li>
+        <li><a class="mobile-menu-link" href="#contacto">Contacto</a></li>
+      </ul>
+
+      <a
+        class="btn btn-primary"
+        data-wa-link="Consulta desde menú móvil"
+        href="https://wa.me/520000000000?text=Hola%2C%20quiero%20comprar%20un%20control%20GameSir."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Comprar por WhatsApp
+      </a>
+    </div>
+
+    <main id="contenido-principal">
+      <!-- 1. HERO -->
+      <section class="hero" id="inicio" data-enter>
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <div class="hero-facts enter-item">
+              <span class="fact-tag is-accent">Envíos a todo México</span>
+              <span class="fact-tag">Compatibles con Xbox y PC</span>
+            </div>
+
+            <h1 class="enter-item enter-delay-1">
+              Controles GameSir para Xbox y PC, con precisión superior al original.
+            </h1>
+
+            <p class="lead enter-item enter-delay-2">
+              Pensados para jugadores que buscan un control más firme, mejor respuesta en cada partida y un precio justo. Pide el tuyo directo por WhatsApp.
+            </p>
+
+            <div class="hero-actions enter-item enter-delay-3">
+              <a
+                class="btn btn-primary"
+                data-wa-link="Quiero comprar un control GameSir"
+                href="https://wa.me/520000000000?text=Hola%2C%20me%20interesa%20comprar%20un%20control%20GameSir."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Comprar por WhatsApp
+              </a>
+              <a class="btn btn-secondary" href="#catalogo">Ver los 5 controles</a>
+            </div>
+          </div>
+
+          <div class="hero-media enter-item enter-delay-2">
+            <div class="img-frame">
+              <img
+                data-img="hero"
+                alt="Control GameSir destacado para Xbox y PC"
+                fetchpriority="high"
+              />
+              <label class="img-edit-btn">
+                Cambiar imagen
+                <input type="file" accept="image/*" data-target-img="hero" aria-label="Cambiar imagen del hero" />
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. CATÁLOGO (los 5 controles exactos) -->
+      <section class="band-alt" id="catalogo">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Catálogo disponible</p>
+              <h2>Cinco modelos GameSir listos para pedir</h2>
+            </div>
+            <p class="lead">
+              Selecciona el modelo que se adapta a tu consola o PC y consulta disponibilidad al instante por WhatsApp.
+            </p>
+          </div>
+
+          <!-- Marcadores de ejemplo: completar precios, compatibilidad, conexión y características con la ficha oficial de cada modelo -->
+          <div class="catalog-grid">
+            <!-- Producto 1: GameSir G7 Pro -->
+            <article class="product-card">
+              <div class="img-frame">
+                <img
+                  data-img="g7pro"
+                  alt="Control GameSir G7 Pro para Xbox y PC"
+                  loading="lazy"
+                />
+                <label class="img-edit-btn">
+                  Cambiar imagen
+                  <input type="file" accept="image/*" data-target-img="g7pro" aria-label="Cambiar imagen de GameSir G7 Pro" />
+                </label>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <h3>GameSir G7 Pro</h3>
+                  <!-- Ejemplo: reemplazar [precio en MXN] con el precio real -->
+                  <span class="product-price">[precio en MXN]</span>
+                </div>
+
+                <!-- completar con la ficha oficial de GameSir G7 Pro -->
+                <dl class="spec-meta">
+                  <div>
+                    <dt>Compatibilidad</dt>
+                    <dd>[Xbox / PC / móvil]</dd>
+                  </div>
+                  <div>
+                    <dt>Conexión</dt>
+                    <dd>[cable / inalámbrico / ambos]</dd>
+                  </div>
+                </dl>
+
+                <ul class="feature-list">
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar]</li>
+                </ul>
+
+                <div class="product-footer">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-wa-link="GameSir G7 Pro"
+                    aria-label="Comprar GameSir G7 Pro por WhatsApp"
+                    href="https://wa.me/520000000000?text=Hola%2C%20quiero%20comprar%20el%20control%20GameSir%20G7%20Pro."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Comprar por WhatsApp
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 2: GameSir Tarantula 8K -->
+            <article class="product-card">
+              <div class="img-frame">
+                <img
+                  data-img="tarantula8k"
+                  alt="Control GameSir Tarantula 8K para Xbox y PC"
+                  loading="lazy"
+                />
+                <label class="img-edit-btn">
+                  Cambiar imagen
+                  <input type="file" accept="image/*" data-target-img="tarantula8k" aria-label="Cambiar imagen de GameSir Tarantula 8K" />
+                </label>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <h3>GameSir Tarantula 8K</h3>
+                  <!-- Ejemplo: reemplazar [precio en MXN] con el precio real -->
+                  <span class="product-price">[precio en MXN]</span>
+                </div>
+
+                <!-- completar con la ficha oficial de GameSir Tarantula 8K -->
+                <dl class="spec-meta">
+                  <div>
+                    <dt>Compatibilidad</dt>
+                    <dd>[Xbox / PC / móvil]</dd>
+                  </div>
+                  <div>
+                    <dt>Conexión</dt>
+                    <dd>[cable / inalámbrico / ambos]</dd>
+                  </div>
+                </dl>
+
+                <ul class="feature-list">
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar]</li>
+                </ul>
+
+                <div class="product-footer">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-wa-link="GameSir Tarantula 8K"
+                    aria-label="Comprar GameSir Tarantula 8K por WhatsApp"
+                    href="https://wa.me/520000000000?text=Hola%2C%20quiero%20comprar%20el%20control%20GameSir%20Tarantula%208K."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Comprar por WhatsApp
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 3: GameSir G7 SE -->
+            <article class="product-card">
+              <div class="img-frame">
+                <img
+                  data-img="g7se"
+                  alt="Control GameSir G7 SE para Xbox y PC"
+                  loading="lazy"
+                />
+                <label class="img-edit-btn">
+                  Cambiar imagen
+                  <input type="file" accept="image/*" data-target-img="g7se" aria-label="Cambiar imagen de GameSir G7 SE" />
+                </label>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <h3>GameSir G7 SE</h3>
+                  <!-- Ejemplo: reemplazar [precio en MXN] con el precio real -->
+                  <span class="product-price">[precio en MXN]</span>
+                </div>
+
+                <!-- completar con la ficha oficial de GameSir G7 SE -->
+                <dl class="spec-meta">
+                  <div>
+                    <dt>Compatibilidad</dt>
+                    <dd>[Xbox / PC / móvil]</dd>
+                  </div>
+                  <div>
+                    <dt>Conexión</dt>
+                    <dd>[cable / inalámbrico / ambos]</dd>
+                  </div>
+                </dl>
+
+                <ul class="feature-list">
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar]</li>
+                </ul>
+
+                <div class="product-footer">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-wa-link="GameSir G7 SE"
+                    aria-label="Comprar GameSir G7 SE por WhatsApp"
+                    href="https://wa.me/520000000000?text=Hola%2C%20quiero%20comprar%20el%20control%20GameSir%20G7%20SE."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Comprar por WhatsApp
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 4: GameSir Kaleid Flux -->
+            <article class="product-card">
+              <div class="img-frame">
+                <img
+                  data-img="kaleidFlux"
+                  alt="Control GameSir Kaleid Flux para Xbox y PC"
+                  loading="lazy"
+                />
+                <label class="img-edit-btn">
+                  Cambiar imagen
+                  <input type="file" accept="image/*" data-target-img="kaleidFlux" aria-label="Cambiar imagen de GameSir Kaleid Flux" />
+                </label>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <h3>GameSir Kaleid Flux</h3>
+                  <!-- Ejemplo: reemplazar [precio en MXN] con el precio real -->
+                  <span class="product-price">[precio en MXN]</span>
+                </div>
+
+                <!-- completar con la ficha oficial de GameSir Kaleid Flux -->
+                <dl class="spec-meta">
+                  <div>
+                    <dt>Compatibilidad</dt>
+                    <dd>[Xbox / PC / móvil]</dd>
+                  </div>
+                  <div>
+                    <dt>Conexión</dt>
+                    <dd>[cable / inalámbrico / ambos]</dd>
+                  </div>
+                </dl>
+
+                <ul class="feature-list">
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar]</li>
+                </ul>
+
+                <div class="product-footer">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-wa-link="GameSir Kaleid Flux"
+                    aria-label="Comprar GameSir Kaleid Flux por WhatsApp"
+                    href="https://wa.me/520000000000?text=Hola%2C%20quiero%20comprar%20el%20control%20GameSir%20Kaleid%20Flux."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Comprar por WhatsApp
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Producto 5: GameSir G7 Pro 8K Edición Campeón Xiaohai -->
+            <article class="product-card">
+              <div class="img-frame">
+                <img
+                  data-img="g7pro8kXiaohai"
+                  alt="Control GameSir G7 Pro 8K Edición Campeón Xiaohai"
+                  loading="lazy"
+                />
+                <label class="img-edit-btn">
+                  Cambiar imagen
+                  <input
+                    type="file"
+                    accept="image/*"
+                    data-target-img="g7pro8kXiaohai"
+                    aria-label="Cambiar imagen de GameSir G7 Pro 8K Edición Campeón Xiaohai"
+                  />
+                </label>
+              </div>
+              <div class="product-body">
+                <div class="product-top">
+                  <h3>GameSir G7 Pro 8K Edición Campeón Xiaohai</h3>
+                  <!-- Ejemplo: reemplazar [precio en MXN] con el precio real -->
+                  <span class="product-price">[precio en MXN]</span>
+                </div>
+
+                <!-- completar con la ficha oficial de GameSir G7 Pro 8K Edición Campeón Xiaohai -->
+                <dl class="spec-meta">
+                  <div>
+                    <dt>Compatibilidad</dt>
+                    <dd>[Xbox / PC / móvil]</dd>
+                  </div>
+                  <div>
+                    <dt>Conexión</dt>
+                    <dd>[cable / inalámbrico / ambos]</dd>
+                  </div>
+                </dl>
+
+                <ul class="feature-list">
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar con la ficha oficial]</li>
+                  <li>[completar]</li>
+                </ul>
+
+                <div class="product-footer">
+                  <a
+                    class="btn btn-primary btn-sm"
+                    data-wa-link="GameSir G7 Pro 8K Edición Campeón Xiaohai"
+                    aria-label="Comprar GameSir G7 Pro 8K Edición Campeón Xiaohai por WhatsApp"
+                    href="https://wa.me/520000000000?text=Hola%2C%20quiero%20comprar%20el%20control%20GameSir%20G7%20Pro%208K%20Edici%C3%B3n%20Campe%C3%B3n%20Xiaohai."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Comprar por WhatsApp
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3. PRODUCTO DESTACADO (Edición Campeón Xiaohai) -->
+      <section id="destacado">
+        <div class="wrap spotlight-grid">
+          <div class="spotlight-media">
+            <div class="img-frame">
+              <img
+                data-img="xiaohaiDetalle"
+                alt="Vista destacada del control GameSir G7 Pro 8K Edición Campeón Xiaohai"
+                loading="lazy"
+              />
+              <label class="img-edit-btn">
+                Cambiar imagen
+                <input
+                  type="file"
+                  accept="image/*"
+                  data-target-img="xiaohaiDetalle"
+                  aria-label="Cambiar imagen destacada de Edición Campeón Xiaohai"
+                />
+              </label>
+            </div>
+          </div>
+
+          <div class="spotlight-content">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Edición destacada</p>
+              <h2>GameSir G7 Pro 8K Edición Campeón Xiaohai</h2>
+            </div>
+
+            <!-- Ejemplo: reemplazar [precio en MXN] con el precio real -->
+            <div class="spotlight-price-row">
+              <span class="spotlight-price">[precio en MXN]</span>
+              <span class="fact-tag">Envíos a todo México</span>
+            </div>
+
+            <!-- completar con la ficha oficial de GameSir G7 Pro 8K Edición Campeón Xiaohai -->
+            <div class="spotlight-specs">
+              <div class="spotlight-spec-row">
+                <span class="spotlight-spec-label">Compatibilidad</span>
+                <span class="spotlight-spec-value">[Xbox / PC / móvil]</span>
+              </div>
+              <div class="spotlight-spec-row">
+                <span class="spotlight-spec-label">Conexión</span>
+                <span class="spotlight-spec-value">[cable / inalámbrico / ambos]</span>
+              </div>
+              <div class="spotlight-spec-row">
+                <span class="spotlight-spec-label">Característica 01</span>
+                <span class="spotlight-spec-value">[completar con la ficha oficial]</span>
+              </div>
+              <div class="spotlight-spec-row">
+                <span class="spotlight-spec-label">Característica 02</span>
+                <span class="spotlight-spec-value">[completar con la ficha oficial]</span>
+              </div>
+              <div class="spotlight-spec-row">
+                <span class="spotlight-spec-label">Característica 03</span>
+                <span class="spotlight-spec-value">[completar]</span>
+              </div>
+            </div>
+
+            <div>
+              <a
+                class="btn btn-primary"
+                data-wa-link="GameSir G7 Pro 8K Edición Campeón Xiaohai (Destacado)"
+                href="https://wa.me/520000000000?text=Hola%2C%20quiero%20pedir%20el%20GameSir%20G7%20Pro%208K%20Edici%C3%B3n%20Campe%C3%B3n%20Xiaohai."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Comprar por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. COMPARATIVA -->
+      <section class="band-alt" id="comparativa">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Comparativa técnica</p>
+              <h2>Los cinco controles frente a frente</h2>
+            </div>
+            <p class="lead">
+              Revisa compatibilidad, tipo de conexión y precio de ejemplo antes de hacer tu pedido.
+            </p>
+          </div>
+
+          <div class="table-shell">
+            <!-- Marcadores de ejemplo: completar cada celda con la ficha oficial -->
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th scope="col">Modelo</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Compatibilidad</th>
+                  <th scope="col">Conexión</th>
+                  <th scope="col">Características clave</th>
+                  <th scope="col">Pedido</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="model-cell">GameSir G7 Pro</td>
+                  <td>[precio en MXN]</td>
+                  <td>[Xbox / PC / móvil]</td>
+                  <td>[cable / inalámbrico / ambos]</td>
+                  <td>[completar con la ficha oficial]</td>
+                  <td>
+                    <a
+                      class="table-link"
+                      href="https://wa.me/520000000000?text=Hola%2C%20cotizar%20GameSir%20G7%20Pro."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Pedir por WhatsApp
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-cell">GameSir Tarantula 8K</td>
+                  <td>[precio en MXN]</td>
+                  <td>[Xbox / PC / móvil]</td>
+                  <td>[cable / inalámbrico / ambos]</td>
+                  <td>[completar con la ficha oficial]</td>
+                  <td>
+                    <a
+                      class="table-link"
+                      href="https://wa.me/520000000000?text=Hola%2C%20cotizar%20GameSir%20Tarantula%208K."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Pedir por WhatsApp
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-cell">GameSir G7 SE</td>
+                  <td>[precio en MXN]</td>
+                  <td>[Xbox / PC / móvil]</td>
+                  <td>[cable / inalámbrico / ambos]</td>
+                  <td>[completar con la ficha oficial]</td>
+                  <td>
+                    <a
+                      class="table-link"
+                      href="https://wa.me/520000000000?text=Hola%2C%20cotizar%20GameSir%20G7%20SE."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Pedir por WhatsApp
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-cell">GameSir Kaleid Flux</td>
+                  <td>[precio en MXN]</td>
+                  <td>[Xbox / PC / móvil]</td>
+                  <td>[cable / inalámbrico / ambos]</td>
+                  <td>[completar con la ficha oficial]</td>
+                  <td>
+                    <a
+                      class="table-link"
+                      href="https://wa.me/520000000000?text=Hola%2C%20cotizar%20GameSir%20Kaleid%20Flux."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Pedir por WhatsApp
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="model-cell">GameSir G7 Pro 8K Edición Campeón Xiaohai</td>
+                  <td>[precio en MXN]</td>
+                  <td>[Xbox / PC / móvil]</td>
+                  <td>[cable / inalámbrico / ambos]</td>
+                  <td>[completar con la ficha oficial]</td>
+                  <td>
+                    <a
+                      class="table-link"
+                      href="https://wa.me/520000000000?text=Hola%2C%20cotizar%20GameSir%20G7%20Pro%208K%20Edici%C3%B3n%20Campe%C3%B3n%20Xiaohai."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Pedir por WhatsApp
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5. POR QUÉ COMPRAR AQUÍ -->
+      <section id="razones">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Respaldo de compra</p>
+              <h2>Por qué comprar tu control aquí</h2>
+            </div>
+            <p class="lead">
+              Un proceso claro desde que eliges tu control hasta que llega a tus manos.
+            </p>
+          </div>
+
+          <div class="reasons-grid">
+            <article class="reason-card">
+              <div class="reason-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" />
+                  <circle cx="12" cy="12" r="3" />
+                  <path d="M12 3v3M12 18v3M3 12h3M18 12h3" />
+                </svg>
+              </div>
+              <h3>Enfoque en precisión y precio justo</h3>
+              <p>
+                Catálogo seleccionado para jugadores de Xbox y PC que buscan un salto real frente al control estándar sin pagar de más.
+              </p>
+            </article>
+
+            <article class="reason-card">
+              <div class="reason-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 7h11v10H3z" />
+                  <path d="M14 10h4l3 3v4h-7z" />
+                  <circle cx="7.5" cy="17.5" r="1.5" />
+                  <circle cx="17.5" cy="17.5" r="1.5" />
+                </svg>
+              </div>
+              <h3>Envíos a todo México</h3>
+              <p>
+                Despachamos pedidos a cualquier estado de la república con número de guía para seguir el trayecto hasta tu domicilio.
+              </p>
+            </article>
+
+            <article class="reason-card">
+              <div class="reason-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+              </div>
+              <h3>Trato directo por WhatsApp</h3>
+              <p>
+                Confirmas existencias, compatibilidad con tu consola o PC y total con envío antes de realizar tu pago.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. CÓMO COMPRAR -->
+      <section class="band-alt" id="como-comprar">
+        <div class="wrap">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Proceso de compra</p>
+              <h2>Cómo comprar en tres pasos</h2>
+            </div>
+            <p class="lead">
+              Sin registros ni carritos complicados. Elige el modelo y confirma tu pedido por mensaje.
+            </p>
+          </div>
+
+          <div class="steps-grid">
+            <article class="step-card">
+              <div class="step-num-row">
+                <span class="step-num">01</span>
+                <span class="step-line" aria-hidden="true"></span>
+              </div>
+              <h3>Elige tu control</h3>
+              <p>
+                Compara los cinco modelos GameSir disponibles y revisa cuál se ajusta mejor a tu forma de jugar en Xbox o PC.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-num-row">
+                <span class="step-num">02</span>
+                <span class="step-line" aria-hidden="true"></span>
+              </div>
+              <h3>Escríbenos por WhatsApp</h3>
+              <p>
+                Toca el botón de compra en tu control favorito. Confirmaremos disponibilidad, precio final y opciones de pago.
+              </p>
+            </article>
+
+            <article class="step-card">
+              <div class="step-num-row">
+                <span class="step-num">03</span>
+                <span class="step-line" aria-hidden="true"></span>
+              </div>
+              <h3>Recibe en tu casa</h3>
+              <p>
+                Una vez confirmado tu pedido, preparamos el paquete y te compartimos la guía de envío a cualquier parte de México.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. CONTACTO Y CIERRE -->
+      <section id="contacto">
+        <div class="wrap close-grid">
+          <div class="close-copy">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>Atención directa</p>
+              <h2>Pide tu control GameSir hoy por WhatsApp</h2>
+            </div>
+
+            <p class="lead">
+              ¿Dudas entre dos modelos o quieres confirmar existencias para envío? Escríbenos directo y te respondemos con la ficha completa.
+            </p>
+
+            <!-- Reemplazar teléfono y correo de ejemplo con tus datos reales -->
+            <dl class="contact-list">
+              <div class="contact-row">
+                <dt class="contact-label">Tienda</dt>
+                <dd class="contact-value">[nombre de la tienda]</dd>
+              </div>
+              <div class="contact-row">
+                <dt class="contact-label">WhatsApp (ejemplo)</dt>
+                <dd class="contact-value">+52 00 0000 0000</dd>
+              </div>
+              <div class="contact-row">
+                <dt class="contact-label">Correo (ejemplo)</dt>
+                <dd class="contact-value">ventas@tienda-ejemplo.example</dd>
+              </div>
+              <div class="contact-row">
+                <dt class="contact-label">Cobertura</dt>
+                <dd class="contact-value">Envíos a todo México</dd>
+              </div>
+            </dl>
+
+            <div>
+              <a
+                class="btn btn-primary"
+                data-wa-link="Consulta final de compra"
+                href="https://wa.me/520000000000?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20un%20control%20GameSir."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Comprar por WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="close-media">
+            <div class="img-frame">
+              <img
+                data-img="cierre"
+                alt="Setup de juego con control para Xbox y PC"
+                loading="lazy"
+              />
+              <label class="img-edit-btn">
+                Cambiar imagen
+                <input type="file" accept="image/*" data-target-img="cierre" aria-label="Cambiar imagen de la sección de contacto" />
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p class="footer-meta">
+          [nombre de la tienda] · Controles GameSir para Xbox y PC · Fotografías de ejemplo vía Unsplash (reemplazar con fotos oficiales).
+        </p>
+
+        <ul class="footer-links">
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#destacado">Edición Xiaohai</a></li>
+          <li><a href="#comparativa">Comparativa</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script>
+      /* =====================================================================
+         IMÁGENES CAMBIABLES
+         Cambia cualquier URL en este objeto para actualizar esa foto en el sitio.
+         También puedes usar el botón "Cambiar imagen" sobre cada foto en pantalla.
+         ===================================================================== */
+      const IMAGENES = {
+        hero: "https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=1400&q=85", // reemplazar con la foto oficial de GameSir G7 Pro (Hero)
+        g7pro: "https://images.unsplash.com/photo-1482855549413-2a6c9b1955a7?auto=format&fit=crop&w=1000&q=85", // reemplazar con la foto oficial de GameSir G7 Pro
+        tarantula8k: "https://images.unsplash.com/photo-1600861194942-f883de0dfe96?auto=format&fit=crop&w=1000&q=85", // reemplazar con la foto oficial de GameSir Tarantula 8K
+        g7se: "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=1000&q=85", // reemplazar con la foto oficial de GameSir G7 SE
+        kaleidFlux: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1000&q=85", // reemplazar con la foto oficial de GameSir Kaleid Flux
+        g7pro8kXiaohai: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?auto=format&fit=crop&w=1000&q=85", // reemplazar con la foto oficial de GameSir G7 Pro 8K Edición Campeón Xiaohai
+        xiaohaiDetalle: "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=1400&q=85", // reemplazar con la foto oficial de GameSir G7 Pro 8K Edición Campeón Xiaohai (destacado)
+        cierre: "https://images.unsplash.com/photo-1586182987320-4f376d39d787?auto=format&fit=crop&w=1400&q=85" // reemplazar con la foto oficial de GameSir para la sección de cierre
+      };
+
+      // Respaldo limpio por si alguna red bloquea carga externa
+      const FALLBACK_SVG =
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Crect width='800' height='500' fill='%2315171c'/%3E%3Crect x='275' y='175' width='250' height='150' rx='36' fill='none' stroke='%2322c55e' stroke-width='4'/%3E%3Cpath d='M330 250h40M350 230v40' stroke='%23f4f4f5' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='445' cy='238' r='8' fill='%2322c55e'/%3E%3Ccircle cx='468' cy='260' r='8' fill='%23f4f4f5'/%3E%3C/svg%3E";
+
+      function aplicarImagen(clave, src) {
+        const imgs = document.querySelectorAll('img[data-img="' + clave + '"]');
+        imgs.forEach((img) => {
+          img.src = src;
+          img.onerror = function () {
+            if (img.src !== FALLBACK_SVG) {
+              img.src = FALLBACK_SVG;
+            }
+          };
+        });
+      }
+
+      // Cargar imágenes iniciales desde el objeto IMAGENES
+      Object.keys(IMAGENES).forEach((clave) => {
+        aplicarImagen(clave, IMAGENES[clave]);
+      });
+
+      // Permitir reemplazar cualquier imagen desde la computadora al instante
+      document.querySelectorAll('input[type="file"][data-target-img]').forEach((input) => {
+        input.addEventListener("change", function (event) {
+          const archivo = event.target.files && event.target.files[0];
+          if (!archivo) return;
+
+          const clave = event.target.getAttribute("data-target-img");
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            if (e.target && typeof e.target.result === "string") {
+              IMAGENES[clave] = e.target.result;
+              aplicarImagen(clave, e.target.result);
+            }
+          };
+          reader.readAsDataURL(archivo);
+        });
+      });
+
+      // Menú móvil accesible
+      const menuBtn = document.getElementById("btn-menu-movil");
+      const mobileMenu = document.getElementById("menu-movil");
+
+      function toggleMobileMenu(forceClose) {
+        if (!menuBtn || !mobileMenu) return;
+        const willOpen = forceClose ? false : !mobileMenu.classList.contains("is-open");
+        mobileMenu.classList.toggle("is-open", willOpen);
+        mobileMenu.setAttribute("aria-hidden", willOpen ? "false" : "true");
+        menuBtn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+        document.body.style.overflow = willOpen ? "hidden" : "";
+      }
+
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener("click", function () {
+          toggleMobileMenu(false);
+        });
+
+        mobileMenu.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", function () {
+            toggleMobileMenu(true);
+          });
+        });
+
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape" && mobileMenu.classList.contains("is-open")) {
+            toggleMobileMenu(true);
+            menuBtn.focus();
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

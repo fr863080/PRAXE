@@ -1,0 +1,6 @@
+{
+  "name": "GameSir MX — Controles Xbox y PC",
+  "description": "Tienda de controles GameSir compatibles con Xbox y PC. Compra directa por WhatsApp y envíos a todo México.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
